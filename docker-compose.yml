@@ -1,0 +1,7 @@
+version: '2.1'
+services:
+  dos:
+    build: .
+    image: mattipaksula/freedos
+    volumes:
+      - './app:/app'
