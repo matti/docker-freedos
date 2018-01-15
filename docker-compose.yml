@@ -1,6 +1,6 @@
 version: '2.1'
 services:
-  dos:
+  freedos:
     build: .
     image: mattipaksula/freedos
     volumes:
