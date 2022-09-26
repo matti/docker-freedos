@@ -1,8 +1,6 @@
-FROM ubuntu:17.04
+FROM alpine
 
-RUN apt-get update && \
-    apt-get install -y qemu && \
-    rm -rf /var/lib/apt/lists/*
+RUN apk add qemu-system-i386 qemu-ui-curses
 
 WORKDIR /app
 ADD app .
